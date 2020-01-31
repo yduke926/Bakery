@@ -7,15 +7,14 @@
     background-repeat: no-repeat;
     display: grid;
     grid-template-columns: repeat(2, minmax(30vw, 1fr));
-    align-items: center;
-    justify-content: center;
+    grid-template-rows: min-content;
 
     &__content {
         grid-column: 2 / -1;
         padding: 8rem;
 
         display: grid;
-        gap: 2rem;
+        gap: 1rem;
     }
 
 }
