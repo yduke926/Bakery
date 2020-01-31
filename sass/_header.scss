@@ -1,0 +1,39 @@
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(max-content, 1fr));
+
+    padding: 2rem 3rem;
+
+
+    &__logo {
+        display: grid;
+        grid-template-columns: repeat(2, min-content);
+        gap: 3rem;
+        align-items: center;
+        margin-left: 5rem;
+
+
+
+        &--img {
+            height: 5rem;
+            widows: 5rem;
+        }
+    }
+
+    &__links {
+        display: grid;
+        grid-template-columns: repeat(auto, minmax(max-content, 1fr));
+        grid-auto-flow: column;
+        align-items: center;
+        justify-items: center;
+    }
+
+}
+
+.header__image {
+    height: 60vh;
+    background-image: linear-gradient(right, rgba(0, 0, 0, 0.2)), url(../img/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 80%;
+}
