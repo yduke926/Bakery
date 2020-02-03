@@ -11,9 +11,40 @@ html {
     padding: 0;
 }
 
+//COLOR VARIABLES //
+$color-text--dark: #575151;
+$color-text--light: #8a8484;
+$color-black: #3f3b3b;
+$color-orange: #feb062;
+
 body {
     font-family: 'Roboto', sans-serif;
     width: 100vw;
     overflow-x: hidden;
     line-height: 1.6;
+}
+
+section {
+    margin: 7rem 0;
+
+}
+
+.btn {
+    padding: 1rem 3.5rem;
+    border-radius: 20rem;
+    border: 2px solid $color-orange;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: $color-orange;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .4s;
+
+
+
+
+    &:hover {
+        background-color: $color-orange;
+        color: $color-text--dark;
+    }
 }
