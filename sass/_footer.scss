@@ -17,6 +17,7 @@
             cursor: pointer;
             transition: all .4s;
             text-align: center;
+            align-self: center;
 
             &:hover {
                 font-weight: bold;
@@ -38,6 +39,10 @@
             padding: .5rem;
             background-color: $color-text--light;
             border-radius: 50rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            padding: 0;
         }
 
     }
