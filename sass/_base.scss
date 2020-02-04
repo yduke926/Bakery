@@ -17,9 +17,13 @@ $color-text--light: #8a8484;
 $color-black: #3f3b3b;
 $color-orange: #feb062;
 
+// MEDIA QUERY VARIABLES//
+$bp-large: 50em; //800px
+
 body {
     font-family: 'Roboto', sans-serif;
-    width: 100vw;
+    width: 100%;
+    max-width: 100%;
     overflow-x: hidden;
     line-height: 1.6;
 }
