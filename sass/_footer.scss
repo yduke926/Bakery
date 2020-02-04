@@ -1,0 +1,43 @@
+.footer {
+    background-color: rgba($color-text--light, 0.4);
+    height: 10vh;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-content: center;
+        justify-items: center;
+
+        li {
+            color: $color-black;
+            font-size: 1.3rem;
+            cursor: pointer;
+            transition: all .4s;
+
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__socials {
+        padding: 0 30%;
+        align-self: center;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+
+        img {
+            width: 30px;
+            height: 30px;
+            padding: .5rem;
+            background-color: $color-text--light;
+            border-radius: 50rem;
+        }
+
+    }
+}
