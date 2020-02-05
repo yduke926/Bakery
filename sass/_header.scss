@@ -53,12 +53,18 @@
 
 
     }
+}
 
-    .header__image {
-        height: 60vh;
-        background-image: linear-gradient(right, rgba(0, 0, 0, 0.2)), url(../img/header.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position-y: 80%;
+.header__image {
+    height: 50vh;
+    width: 100%;
+
+    background-image: linear-gradient(right, rgba(0, 0, 0, 0.2)), url(../img/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 80%;
+
+    @media only screen and (max-width: $bp-large) {
+        height: 30vh;
     }
 }
