@@ -15,12 +15,13 @@
             color: $color-black;
             font-size: 1.3rem;
             cursor: pointer;
-            transition: all .4s;
+            border-bottom: 2px solid transparent;
+            transition: all .2s;
             text-align: center;
             align-self: center;
 
             &:hover {
-                font-weight: bold;
+                border-bottom: 2px solid #ffffff;
             }
         }
     }
