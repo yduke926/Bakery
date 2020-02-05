@@ -1,6 +1,6 @@
 .overview {
     height: 70vh;
-    background-image: url(../img/section-bg.jpg);
+    background-image: linear-gradient(to bottom, white 0%, transparent 100%), url(../img/overview-bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -8,26 +8,34 @@
 
     display: grid;
     grid-template-columns: repeat(2, minmax(30vw, 1fr));
-    grid-template-rows: min-content;
+    grid-template-rows: 1fr;
     align-content: center;
     justify-content: center;
+
+    @media only screen and (max-width: $bp-large) {
+        text-align: center;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        background-size: contain;
+        background-position: bottom;
+        background-image: linear-gradient(to bottom, white 30%, transparent 100%), url(../img/overview-bg.jpg);
+    }
 
     &__content {
         grid-column: 2 / -1;
         padding: 8rem 2rem;
-        margin-bottom: 5rem;
 
 
         display: grid;
+        grid-template-rows: 10% 1fr;
         gap: 1rem;
         justify-content: center;
 
-        @media only screen and (max-width: $bp-large) {
-            padding: 0 2rem;
 
-            p {
-                padding-bottom: 5rem;
-            }
+        @media only screen and (max-width: $bp-large) {
+            grid-column: 1 / -1;
+            justify-items: center;
         }
 
     }
