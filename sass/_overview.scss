@@ -7,24 +7,20 @@
 
 
     display: grid;
-    grid-template-columns: repeat(2, minmax(30vw, 1fr));
     grid-template-rows: 1fr;
     align-content: center;
     justify-content: center;
 
-    @media only screen and (max-width: $bp-large) {
-        text-align: center;
-    }
+    text-align: center;
 
     @media only screen and (max-width: $bp-small) {
         background-size: contain;
         background-position: bottom;
-        background-image: linear-gradient(to bottom, white 30%, transparent 100%), url(../img/overview-bg.jpg);
+        background-image: linear-gradient(to bottom, white 50%, transparent 100%), url(../img/overview-bg.jpg);
     }
 
     &__content {
-        grid-column: 2 / -1;
-        padding: 8rem 2rem;
+        padding: 8rem;
 
 
         display: grid;
@@ -32,10 +28,17 @@
         gap: 1rem;
         justify-content: center;
 
+        h1 {
+            align-self: center;
+        }
 
-        @media only screen and (max-width: $bp-large) {
-            grid-column: 1 / -1;
-            justify-items: center;
+        @media only screen and (max-width: $bp-medium) {
+            grid-template-rows: 20% 1fr;
+            padding: 0 8rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            padding: 0 4rem;
         }
 
     }
