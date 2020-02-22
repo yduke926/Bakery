@@ -3,7 +3,8 @@
     grid-template-rows: min-content 1fr;
 
     h1 {
-        font-size: 30rem;
+        font-size: 20rem;
+        letter-spacing: 1.3rem;
         color: rgba($color-orange, 0.8);
         justify-self: center;
 
@@ -12,30 +13,39 @@
 
 .form-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 35vw 1fr;
     gap: 5rem;
     justify-items: center;
     align-items: center;
     font-size: 1.5rem;
     color: $color-text--dark;
 
+    .form-info {
+        align-self: start;
+        justify-self: right;
+        line-height: 5rem;
+        font-size: 2rem;
+    }
 
     form {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
-        justify-items: center;
+        // justify-items: center;
+        padding-bottom: 5rem;
 
-        .text-box {
+        .text-box,
+        .text-box label {
             grid-column: 1 / -1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            text-align: center;
+            padding-top: 2rem;
+
 
         }
 
 
-        input {
+        input,
+        textarea {
             background: none;
             border: none;
             outline: none;
@@ -43,7 +53,8 @@
             color: $color-text--dark;
             border-bottom: 1px solid;
             padding: 1rem;
-            padding-bottom: 3rem;
+            min-width: 100%;
+            max-width: 100%;
 
         }
 
