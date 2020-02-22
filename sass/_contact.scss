@@ -3,35 +3,62 @@
     grid-template-rows: min-content 1fr;
 
     h1 {
-        font-size: 20rem;
+        font-size: 15rem;
         letter-spacing: 1.3rem;
         color: rgba($color-orange, 0.8);
         justify-self: center;
+        align-self: center;
+        text-align: center;
 
+        @media only screen and (max-width: $bp-large) {
+            font-size: 10rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 7rem;
+            letter-spacing: .8rem;
+        }
     }
 }
 
 .form-container {
     display: grid;
     grid-template-columns: 35vw 1fr;
-    gap: 5rem;
+    gap: 3rem;
     justify-items: center;
     align-items: center;
     font-size: 1.5rem;
     color: $color-text--dark;
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 
     .form-info {
         align-self: start;
         justify-self: right;
         line-height: 5rem;
         font-size: 2rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            align-self: center;
+            justify-self: center;
+            grid-row: 2 / 3;
+            text-align: center;
+
+        }
     }
 
     form {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
+        padding: 2rem;
         padding-bottom: 5rem;
+
+
+
 
         .text-box,
         .text-box label {
@@ -55,6 +82,8 @@
             padding: 1rem;
             min-width: 100%;
             max-width: 100%;
+
+
 
         }
 
