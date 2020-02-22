@@ -31,7 +31,6 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
-        // justify-items: center;
         padding-bottom: 5rem;
 
         .text-box,
@@ -49,6 +48,7 @@
             background: none;
             border: none;
             outline: none;
+            font-family: 'Open Sans', sans-serif;
             font-size: 1.8rem;
             color: $color-text--dark;
             border-bottom: 1px solid;
