@@ -42,10 +42,14 @@ header {
     border: 2px solid $color-orange;
     background-color: transparent;
     text-transform: uppercase;
+    text-decoration: none;
     color: $color-orange;
     font-weight: bold;
     cursor: pointer;
     transition: all .4s;
+
+    display: grid;
+    align-items: center;
 
 
     &-gray {
