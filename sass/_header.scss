@@ -20,7 +20,7 @@
         gap: 3rem;
         align-items: center;
         justify-content: center;
-        animation: slideInLeft 1.3s ease-in-out;
+        animation: slideInLeft .8s ease-in-out;
 
 
 
@@ -42,7 +42,7 @@
         grid-auto-flow: column;
         align-items: center;
         justify-items: center;
-        animation: slideInRight 1.3s ease-in-out;
+        animation: slideInRight .8s ease-in-out;
 
         @media only screen and (max-width: $bp-medium) {
             column-gap: .5rem;
