@@ -69,3 +69,33 @@ header {
         color: $color-text--dark;
     }
 }
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%) scale(.2);
+    }
+
+    100% {
+        transform: translateX(0px) scale(1);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%) scale(.2);
+    }
+
+    100% {
+        transform: translateX(0px) scale(1);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(300px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
