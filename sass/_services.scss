@@ -17,20 +17,21 @@
         justify-items: center;
 
         h3 {
-            color: #fdfdfd;
+            // color: #fdfdfd;
             text-transform: uppercase;
         }
     }
 
     &--1 {
-        background-color: orangered;
+        // background-color: orangered;
         grid-column: 1 / 3;
         grid-row: 1 / span 3;
 
         grid-template-rows: min-content 10% 1fr;
+        justify-self: start;
 
         img {
-            transform: translate(40%, -23%);
+            transform: translate(40%, -15%);
         }
 
     }
