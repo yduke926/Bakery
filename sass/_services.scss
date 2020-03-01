@@ -1,10 +1,10 @@
 .menu__items {
     height: 90vh;
-    padding: 0 5rem;
+    // padding: 0 5rem;
     margin-bottom: 2rem;
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr) 15%;
+    grid-template-columns: repeat(2, 1fr) 20%;
 
 
     &--1,
@@ -73,6 +73,7 @@
 
         img {
             justify-self: start;
+            width: 40%;
         }
 
         img,
@@ -110,7 +111,7 @@
             }
 
             img {
-                width: 30rem;
+                width: 40%;
                 justify-self: end;
                 transform: translateY(-4%);
             }
@@ -119,6 +120,7 @@
         &-b {
             grid-template-rows: min-content 1fr;
             padding: 0;
+            padding-bottom: 5rem;
 
             h3,
             .line {
@@ -130,20 +132,6 @@
                 align-self: end;
             }
 
-            img,
-            ul {
-                grid-row: 2 / 3;
-                grid-column: 1 / -1;
-            }
-
-            img {
-                justify-self: end;
-                transform: translate(5%, -35%);
-                position: relative;
-                z-index: -1;
-
-                height: 50rem;
-            }
 
             .cake-order {
                 align-self: center;
