@@ -70,6 +70,13 @@ header {
     }
 }
 
+.line {
+    width: 50%;
+    height: .2rem;
+    background-color: $color-black;
+    justify-self: center;
+}
+
 @keyframes slideInRight {
     0% {
         transform: translateX(100%) scale(.2);
